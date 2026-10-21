@@ -1,0 +1,86 @@
+.contenu{
+    display: flex;
+    justify-content: center;
+    gap: 30%;
+}
+/* left part */
+.left-part img{
+    outline: none;
+    border: 1px solid black;
+    height: 100%;
+    width: 200%;
+}
+.left-part  img:hover{
+    filter: brightness(80%);
+}
+/*right part */
+.right-part a{
+    text-decoration: none;
+    color: black;
+}
+.right-part a:hover{
+    text-decoration: none;
+    color: #b08d55;
+}
+/*product quantity*/
+.counter{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    
+}
+.counter input{
+    width: 50px;
+    line-height: 30px;
+    font-size: 20px;
+    text-align: center;
+    appearance: none;
+    outline: 0;
+    border: none;
+
+}
+
+/*panier button */
+.panier-div{
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    background-color: gainsboro;
+}
+#panier{
+    background-color: #b08d55;
+    color: #fff;
+    border-radius: 3px;
+    border: none;
+}
+#panier:hover{
+    background-color: #e3c786;
+        border: none;
+}
+
+.conseils{
+    display: flex;
+    justify-content: center;
+    outline: none;
+    gap: 20px;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+/* description du parfum */
+.text h1{
+ display: flex;
+ justify-content: center;
+
+}
+.text p,h2{
+ display: flex;
+ justify-content: center;
+
+}
+.text p{
+    font-style: italic;
+}

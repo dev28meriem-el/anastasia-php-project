@@ -1,0 +1,337 @@
+   * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+   }
+   /* @keyframes drop{
+    from {transform: translateY(-30px); opacity: 0;}
+    to {transform: translateY(0); opacity: 1;}
+} */
+   /*navigateur*/
+   /* le premier nav first */
+   .first {
+     text-align: center;
+     position: sticky;
+     top: 0;
+     width: 100%;
+     height: 70px;
+     z-index: 9999;
+     padding: 10px;
+   }
+   /* le deuxieme nav second */
+   .second {
+     position: sticky;
+     top: 70px;
+     width: 100%;
+     height: 60px;
+     z-index: 9998;
+     display: flex;
+     justify-content: flex-end;
+     align-items: center;
+     padding: 15px 30px;
+   }
+   .first,
+   .second {
+     background-color: rgb(18, 18, 14);
+   }
+   /* div qui contient le titrede site */
+   .div_logo {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     position: relative;
+   }
+   /* changer du couleur du titre du site*/
+   #titre_de_site {
+     position: absolute;
+     left: 50%;
+     transform: translateX(-50%);
+     margin: 0;
+     color: #b08d55;
+     /* font-family:Lucida Handwriting,Comic Sans MS,Impact; */
+     font-size: 30px;
+     text-shadow: 3px 3px 3px #201f1f;
+     font-family: "Dancing Script", cursive;
+     font-weight: 400;
+     font-size: 50px;
+     font-style: normal;
+   }
+   /* les icones du panier etcc... */
+   .list_right_icone {
+     list-style: none;
+     display: flex;
+     justify-content: flex-end;
+     gap: 20px;
+
+   }
+   .list a {
+     text-decoration: none;
+   }
+   /*span in the icons*/
+   .list_right_icone li {
+     position: relative;
+   }
+   .list_right_icone>li>a>.span {
+     position: absolute;
+     top: -6px;
+     right: -8px;
+     width: 17px;
+     height: 17px;
+     line-height: 17px;
+     border-radius: 50%;
+     text-align: center;
+     background: #ffefef;
+     color: rgb(23, 22, 22);
+     font-size: 10px;
+   }
+   /* lapartie qui contient accueil ou menu du page */
+   .mini_list {
+     display: flex;
+     gap: 50px;
+     margin: auto;
+   }
+   .mini_list li {
+     list-style: none;
+   }
+   /* changer du couleur du second deuxieme nav */
+   .mini_list a {
+     text-decoration: none;
+     color: #d6d6d6;
+   }
+   /* changer le couleur des icones pres du titre*/
+   .list_right_icone li a i {
+     /* color:  #b08d55  ; */
+     color: #9d9b9b;
+     font-size: 22px;
+   }
+   .list_right_icone li a i {
+     color: #b08d55;
+     font-size: 22px;
+   }
+   /* la partie premier d animation*/
+   .div_animated {
+     margin-bottom: 0;
+     height: 40px;
+     background-color: black;
+     overflow: hidden;
+     color: white;
+     background: linear-gradient(to top,
+         #000000 0%,
+         #000000 85%,
+         #b08d55 100%);
+
+   }
+   /* .slider-wrapper{
+    margin-top:0;
+} */
+   /*animation du premier div du page web*/
+   .wrapper {
+     display: flex;
+     flex-direction: column;
+     animation: wrapper 9s infinite;
+   }
+   .wrapper span {
+     height: 40px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+   }
+   @keyframes wrapper {
+     0%,20% {
+       transform: translateY(0);
+     }
+      33%,53% {
+       transform: translateY(-40px);
+     }
+
+     66%, 86% {
+       transform: translateY(-80px);
+     }
+
+     100% {
+       transform: translateY(0);
+     }
+   }
+
+   .container {
+     padding: 2rem;
+   }
+   .slider-wrapper {
+     width: 100%;
+     height: 500px;
+     overflow: hidden;
+     position: relative;
+   }
+   .slider {
+     display: flex;
+     width: 100%;
+     height: 500px;
+     animation: slide 12s infinite;
+   }
+   .slider img {
+     width: 100%;
+     height: 500px;
+     object-fit: cover;
+     flex: 1 0 100%;
+   }
+   @keyframes slide {
+     0% {
+       transform: translateX(0);
+     }
+     25% {
+       transform: translateX(0);
+     }
+     30% {
+       transform: translateX(-100%);
+     }
+     55% {
+       transform: translateX(-100%);
+     }
+     60% {
+       transform: translateX(-200%);
+     }
+     85% {
+       transform: translateX(-200%);
+     }
+     100% {
+       transform: translateX(0%);
+     }
+   }
+   .title-section {
+     text-align: center;
+   }
+   .list-parfum {
+     display: flex;
+     gap: 20px;
+     justify-content: center;
+     flex-wrap: wrap;
+
+   }
+   .list-parfum {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 20px;
+     justify-content: center;
+   }
+   .card {
+     width: 250px;
+     padding: 15px;
+     border: 1px solid #ddd;
+     border-radius: 10px;
+     text-align: center;
+   }
+   .card img {
+     width: 100%;
+     height: 300px;
+     object-fit: cover;
+     border-radius: 10px;
+   }
+   .card-button {
+     margin-top: 10px;
+   }
+   .card-item {
+     width: 250px;
+   }
+   #parfum {
+     margin: 20px auto;
+     display: block;
+     width: 200px;
+     border-radius: 10px;
+     text-decoration: none;
+     color: white;
+   }
+   #parfum:hover {
+     text-decoration: none;
+     color: black;
+     background-color: #b08d55;
+   }
+   /*pub du page d accueil*/
+   .publication {
+     width: 100%;
+     border: 1px solid black;
+   }
+   .pub_img {
+     width: 100%;
+     display: block;
+     border-radius: 10px;
+     opacity: 0.8;
+   }
+   /* css du footer */
+   .footer {
+     text-align: center;
+     width: 100%;
+     min-height: 250px;
+     margin-bottom: 0;
+     padding: 40px 20px;
+     background-color: #201f1f;
+     background: linear-gradient(to bottom,
+         #000000 0%,
+         #000000 98%,
+         #b08d55 100%);
+   }
+   .footer .col {
+     color: #9d9b9b;
+     font-family: "Verdana", "Helvetica", "Arial", sans-serif;
+   }
+   .footer .col a {
+     text-decoration: none;
+     color: #9d9b9b;
+   }
+   .footer .col a:hover {
+     text-decoration: solid;
+     color: #b08d55;
+   }
+   .footer h1 {
+     color: #b08d55;
+   }
+   /* couleur du icone du  footer */
+   .footer a i {
+     margin-top: 50px;
+     font-size: 30px;
+     color: #9d9b9b;
+   }
+   .footer a i:hover {
+     color: #b08d55;
+   }
+   /*button des images*/
+   .card-button a {
+     text-decoration: none;
+     color: #fff;
+   }
+   .card-button a:hover {
+     text-decoration: none;
+     background-color: #b08d55;
+   }
+   /* les boutons apres images */
+   #panier {
+     background-color: black;
+     border: 1px solid black;
+     border-radius: 10px;
+     text-align: center;
+     text-decoration: none;
+     text-transform: capitalize;
+     color: white;
+   }
+   #panier:hover {
+     background-color: #b08d55;
+     border: 1px solid #b08d55;
+     border-radius: 10px;
+     text-align: center;
+     text-decoration: none;
+     color: black;
+     text-transform: capitalize;
+   }
+   /* description du parfum */
+   .text h1 {
+     display: flex;
+     justify-content: start;
+
+   }
+   .text pre {
+     display: flex;
+     justify-content: center;
+
+   }
+   .text p {
+     font-style: italic;
+   }

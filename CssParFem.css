@@ -1,0 +1,42 @@
+/* .list_parfum{
+    display: flex;
+    justify-content: space-between;
+} */
+
+/*pagination code */
+.pagination{
+      display:flex;
+      justify-content: center;
+      gap:10px;
+      align-items:center;
+    }
+
+    .pagination a{
+      width:40px;
+      height:40px;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-decoration:none;
+      border:1px solid #ddd;
+      color:#000;
+      border-radius:50%;
+      transition:0.3s;
+      font-size:14px;
+    }
+
+    .pagination a:hover{
+      background:#000;
+      color:#fff;
+    }
+
+    .pagination a.active{
+      background:#000;
+      color:#fff;
+      border-color:#000;
+    }
+
+    .pagination .arrow{
+      font-size:18px;
+      font-weight:bold;
+    }

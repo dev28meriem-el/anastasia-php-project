@@ -1,0 +1,9 @@
+<?php 
+include'base.php';
+if(!isset($_SESSION['Id_Cl'])){
+    header('location:login.php');
+}
+if($_SESSION['Role_Cl']!='admin'){
+    header("location:login.php");
+ }
+?>

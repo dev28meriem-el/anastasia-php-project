@@ -1,0 +1,23 @@
+.row {
+    display: flex;
+    justify-content: center;
+}
+.form-box {
+    background-color: rgba(225, 225, 225, 0.5);
+    backdrop-filter: blur(30px);
+    border: 1px solid white;
+    border-radius: 10px;
+}
+.form-box input {
+    border-radius: 10px;
+}
+.form-box input:focus {
+    box-shadow: 0 0 0;
+    background-color: #cabba8a2;
+}
+.form-box .btn {
+    background-color: #1a1a1a;
+    border: none;
+    border-radius: 10px;
+    color: white;
+}
